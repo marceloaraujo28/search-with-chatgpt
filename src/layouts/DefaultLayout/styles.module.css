@@ -1,0 +1,49 @@
+.Container {
+  max-width: 1000px;
+  min-width: 512px;
+  min-height: 52.563rem;
+  margin: 4rem auto;
+  height: calc(100vh - 8rem);
+  background-color: #202024;
+  border-radius: 8px;
+  padding: 2.5rem;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Container::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.Container::-webkit-scrollbar-track {
+  background: var(--gray-500); /* color of the tracking area */
+}
+
+.Container::-webkit-scrollbar-thumb {
+  background-color: var(--gray-400); /* color of the scroll thumb */
+  border: 1px solid var(--gray-500); /* creates padding around scroll thumb */
+}
+
+nav {
+  width: 100%;
+  padding-right: 0.625rem;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+
+  text-decoration: none;
+}
+
+a {
+  padding: 0.8rem;
+  color: var(--gray-100);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gray-200);
+}
