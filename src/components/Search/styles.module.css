@@ -1,0 +1,49 @@
+.Container {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container input {
+  flex: 1;
+  height: 3.5rem;
+  border: none;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--gray-400);
+  font-weight: 700;
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+}
+
+.Container input:focus {
+  border-radius: 8px;
+  border-color: var(--gray-300);
+  outline: none;
+}
+
+.Button {
+  border: none;
+  width: 5rem;
+  height: 3.5rem;
+  border-radius: 8px;
+  outline: none;
+  background: var(--blue);
+  color: var(--gray-100);
+  font-weight: 700;
+  border: 1px solid var(--gray-700);
+}
+
+.Button:disabled{
+    opacity: 0.7;
+}
+
+.Button:not(:disabled):hover {
+  color: var(--gray-200);
+  cursor: pointer;
+  opacity: 0.9;
+  transition: all 0.2s;
+}
