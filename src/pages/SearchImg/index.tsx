@@ -44,7 +44,7 @@ export function SearchImg() {
         <div className={styles.imgBox}>
           {error ? "Houve um erro ao buscar essa imagem" : ""}
           {loading ? "Buscando imagem..." : ""}
-          {image ? <img className={styles.imgStyle} src={image} /> : ""}
+          {image && !loading && <img className={styles.imgStyle} src={image} />}
         </div>
       </div>
     </div>

@@ -19,9 +19,7 @@
 
 .imgBox {
   margin-top: 1rem;
-  padding: 1rem;
   flex: 1;
-  min-height: 31rem;
   display: flex;
   align-items: center;
   justify-content: center;
