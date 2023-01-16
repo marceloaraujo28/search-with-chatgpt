@@ -15,6 +15,7 @@ export function SearchImg() {
   const [error, setError] = useState(false);
 
   async function onSearchImage(value: string) {
+    setError(false);
     setLoading(true);
 
     try {
@@ -44,7 +45,9 @@ export function SearchImg() {
         <div className={styles.imgBox}>
           {error ? "Houve um erro ao buscar essa imagem" : ""}
           {loading ? "Buscando imagem..." : ""}
-          {image && !loading && <img className={styles.imgStyle} src={image} />}
+          {image && !loading && !error && (
+            <img className={styles.imgStyle} src={image} />
+          )}
         </div>
       </div>
     </div>
