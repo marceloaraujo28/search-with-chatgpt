@@ -27,8 +27,7 @@
 
 .Button {
   border: none;
-  width: 5rem;
-  height: 3.5rem;
+  padding: 1rem;
   border-radius: 8px;
   outline: none;
   background: var(--blue);
@@ -37,8 +36,8 @@
   border: 1px solid var(--gray-700);
 }
 
-.Button:disabled{
-    opacity: 0.7;
+.Button:disabled {
+  opacity: 0.7;
 }
 
 .Button:not(:disabled):hover {

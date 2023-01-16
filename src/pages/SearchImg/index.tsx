@@ -31,6 +31,8 @@ export function SearchImg() {
     setLoading(false);
   }
 
+  console.log(image);
+
   return (
     <div className={styles.Container}>
       <Search
@@ -41,7 +43,8 @@ export function SearchImg() {
         <h1>Resultado :</h1>
         <div className={styles.imgBox}>
           {error ? "Houve um erro ao buscar essa imagem" : ""}
-          {loading ? "Buscando imagem..." : <img src={image} />}
+          {loading ? "Buscando imagem..." : ""}
+          {image ? <img className={styles.imgStyle} src={image} /> : ""}
         </div>
       </div>
     </div>

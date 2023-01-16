@@ -1,7 +1,6 @@
 .Container {
-  max-width: 1000px;
-  min-width: 512px;
-  min-height: 52.563rem;
+  max-width: 62.5rem;
+  min-width: 23.125rem;
   margin: 4rem auto;
   height: calc(100vh - 8rem);
   background-color: #202024;

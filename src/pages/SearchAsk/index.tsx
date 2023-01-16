@@ -46,16 +46,17 @@ export function SearchAsk() {
     setLoading(false);
   }
 
-  const waiting = loading ? "Buscando Resposta.." : "Aguardando Pergunta..";
-  const erro = "Aconteceu um erro, tente novamentea";
-
-  const empty = error ? erro : waiting;
-
   return (
     <div className={styles.Container}>
       <Search onSearch={onSearchAsk} placeHolder={"Faça uma pergunta"} />
       <div className={styles.Results}>
-        <h1></h1>
+        <div className={styles.loading}>
+          {loading ? (
+            <div className={styles.cLoader} />
+          ) : (
+            "Obs: informações atualizadas até o ano de 2021"
+          )}
+        </div>
         <div className={styles.txtBox}>
           {text.length
             ? text.map((item) => {
@@ -66,7 +67,8 @@ export function SearchAsk() {
                   </div>
                 );
               })
-            : empty}
+            : ""}
+          {error ? "Ocorreu um erro, tente novamente" : ""}
         </div>
       </div>
     </div>

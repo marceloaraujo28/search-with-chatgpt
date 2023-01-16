@@ -19,11 +19,24 @@
 
 .imgBox {
   margin-top: 1rem;
+  padding: 1rem;
   flex: 1;
-  min-height: 32rem;
+  min-height: 31rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--gray-400);
   border-radius: 8px;
+}
+
+.imgStyle {
+  max-width: 29rem;
+  max-height: 29rem;
+}
+
+@media (max-width: 600px) {
+  .imgStyle {
+    width: 15rem;
+    height: 15rem;
+  }
 }
