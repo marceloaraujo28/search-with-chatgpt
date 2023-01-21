@@ -63,7 +63,7 @@ export function SearchAsk() {
                 return (
                   <div className={styles.answersContainer} key={item.id}>
                     <h1>{item.title}</h1>
-                    <div className={styles.answers}>R: {item.content}</div>
+                    <pre className={styles.answers}>{item.content.trim()}</pre>
                   </div>
                 );
               })
